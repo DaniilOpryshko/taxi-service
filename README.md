@@ -2,7 +2,7 @@
 ## Content
 * [Project description](#description)
 * [Project achitecture](#architecture)
-* [Steps to reproduce?](#start)
+* [How to run a project?](#start)
 * [Authors](#author)
 
 ## <a name="description"></a>Description
@@ -41,7 +41,7 @@ After successful login you will have access to all functionality.
 - HTML, CSS, XML
 
 ---
-## <a name="start"></a>Steps to reproduce
+## <a name="start"></a>How to run a project
 1. Configure Tomcat for your IDE. I used Tomcat 9.0.59 and Intellij Idea Ultimate
 2. To set up database run script located in ```src/main/resources/init_db.sql```
 3. In ```src/main/java/taxi/util/ConnectionUtil.java``` replace ```USERNAME``` ```PASSWORD``` ```DATABASE_URL``` and ```DRIVER_CLASS_NAME``` with your database params
