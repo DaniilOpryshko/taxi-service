@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="info">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %5p %t %-5l - %m%n"/>
+        </Console>
+        <File name="File" fileName="ABSOLUTE_PATH_TO_YOUR_LOG_FILE">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %5p %t %-5l - %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="taxi" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Root level="error">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="File"/>
+        </Root>
+    </Loggers>
+</configuration>
